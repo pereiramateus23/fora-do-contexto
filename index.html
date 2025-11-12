@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Leoyue-The-Bourne-Ultimatum-M1911.ico" type="image/x-icon">
+    <title>PereiraMultimarcas</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+        <div class="logo">
+            <img src="imagem/apple-touch-icon.png" alt="Logo PereiraMultimarcas">
+        </div>
+        <div class="welcome-message">
+        <h1>Bem-vindo à PereiraMultimarcas</h1>
+        <p>As melhores marcas com os melhores preços, em um só lugar!</p>
+        <a href="produtos.html" class="btn">Conheça nossos Produtos</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="vendas.html">Melhores Vendas</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="login.html" class="login">Login</a></li>
+                <li><a href="carrinho.html" class="carrinho"><img src="imagem/carrinho-de-compras.png" alt="Carrinho" /></a></li>
+
+                <div class="carrinho-conteudo" id="carrinho-conteudo-hover">
+                    <p>O carrinho está vazio.</p>
+                </div>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+
+        <section id="destaques" class="destaque">
+            <div class="produto">
+                <img src="imagem/D_NQ_NP_877736-MLB50839204005_072022-O(1).png" alt="Blusa do Fluminense">
+                <h2>Blusa do Fluminense</h2>
+                <p>Blusa do Fluminense perfeita para qualquer ocasião.</p>
+                <p class="preco">R$ 99,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Blusa do Fluminense', 99.99)">Adicionar ao carrinho</button>
+                <div class="galeria">
+                    <img src="imagem/MeiaoFlu.png">
+                    <img src="imagem/fluBranca.png" alt="fluBranca">
+                    <img src="imagem/FluVinho.png" alt="FluVinho">
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/Bonezada.png" alt="Conjunto de bonés">
+                <h2>Conjunto de Bonés</h2>
+                <p>Bonés em promoção para completar seu visual e proteger do sol.</p>
+                <p class="preco">R$ 60,00</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Conjunto de Bonés', 60.00)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/CasacoFlu.png" alt="CasacoFlu">
+                <h3>Casaco do Fluminense</h3>
+                <p>Ideal para o Frio em dia de jogo</p>
+                <p class="preco">R$ 99,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Casaco do Fluminense', 99.99)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/Camisatropical.jpg" alt="Camiseta Estampada">
+                <h2>Camiseta Estampada</h2>
+                <p>Camiseta ideal e confortável para usar durante o verão.</p>
+                <p class="preco">R$ 29,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Camiseta Estampada', 29.99)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/1051_FLU.png" alt="Copo Cylinder Fluminense 300ml Com 4 Unidades">
+                <h2>Copo Cylinder Fluminense 300ml Com 4 Unidades</h2>
+                <p>Ideal para sua cozinha.</p>
+                <p class="preco">R$ 60,00</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Copo Cylinder Fluminense', 60.00)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/CanecaFlu.png" alt="CanecaFlu">
+                <h3>Caneca do Fluminense</h3>
+                <p>Ideal para bebidas geladas </p>
+                <p class="preco">R$ 49,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Caneca do Fluminense', 49.99)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/FluzaoRosa.png" alt="Camisa Fluminense Rosa">
+                <h3>Camisa Fluminense 2023</h3>
+                <p class="preco">R$ 89,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Camisa Fluminense 2023', 89.99)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/RegataTricolor.png" alt="RegataTricolor">
+                <h3>Regata do Fluminense 2023</h3>
+                <p class="preco">R$ 79,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Regata do Fluminense 2023', 79.99)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/RoupaCachorro.png" alt="RoupaCachorro">
+                <h3>Roupa para Pet</h3>
+                <p>Roupa ideal para o seu Cachorro</p>
+                <p class="preco">R$ 29,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Roupa para Pet', 29.99)">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/PulseirasFlu.png" alt="PulseirasFlu">
+                <h3>Pulseira do Fluminense</h3>
+                <p>Acessório ideal para sair </p>
+                <p class="preco">R$ 49,99</p>
+                <button class="comprar" onclick="adicionarAoCarrinho('Pulseira do Fluminense', 49.99)">Adicionar ao carrinho</button>
+            </div>
+        </section>
+
+        <div class="carrossel">
+            <div class="carrossel-controls">
+                <span class="prev">‹</span>
+                <span class="next">›</span>
+            </div>
+            
+            <div class="carrossel-wrapper">
+                <div class="produto-slide">
+                    <img src="imagem/PortaRetratoFlu.png" alt="Produto 1">
+                    <div class="produto-info">
+                        <h2>Porta Retrato</h2>
+                        <p class="preco">R$ 80,99</p>
+                    </div>
+                </div>
+                <div class="produto-slide">
+                    <img src="imagem/PulseirasFlu.png" alt="Produto 2">
+                    <div class="produto-info">
+                        <h2>Pulseira do Fluminense</h2>
+                        <p class="preco">R$ 19,99</p>
+                    </div>
+                </div>
+                <div class="produto-slide">
+                    <img src="imagem/FluInfantil.png" alt="Produto 3">
+                    <div class="produto-info">
+                        <h2>Fluminense Infantil</h2>
+                        <p class="preco">R$ 49,99</p>
+                    </div>
+                </div>
+                <div class="produto-slide">
+                    <img src="imagem/ConjuntodecoposFlu.png" alt="Produto 4">
+                    <div class="produto-info">
+                        <h2>Conjunto com 6 Copos </h2>
+                        <p class="preco">R$ 59,99</p>
+                    </div>
+                </div>
+                <div class="produto-slide">
+                    <img src="imagem/EscapularioFlu.png" alt="Produto 5">
+                    <div class="produto-info">
+                        <h2>Escapulário Fluminense</h2>
+                        <p class="preco">R$ 29,99</p>
+                    </div>
+                </div>
+                <div class="produto-slide">
+                    <img src="imagem/ChnieloFlu.png" alt="Produto 6">
+                    <div class="produto-info">
+                        <h2>Chinelo do Fluminense</h2>
+                        <p class="preco">R$ 79,99</p>
+                    </div>
+                </div>
+                <div class="produto-slide">
+                    <img src="imagem/fluBranca.png" alt="Produto 7">
+                    <div class="produto-info">
+                        <h2>Fluminense Branca</h2>
+                        <p class="preco">R$ 89,99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p>Preencha o formulário abaixo para entrar em contato:</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Horário de funcionamento: Segunda a Sexta, das 9h às 17h</p>
+        <p>&copy; 2023 PereiraMultimarcas</p>
+    </footer>
+
+    <script>
+        const carrinho = [];
+
+        function adicionarAoCarrinho(produto, preco) {
+            carrinho.push({ produto, preco });
+            atualizarCarrinho();
+        }
+
+        function atualizarCarrinho() {
+            const carrinhoItens = document.getElementById('carrinho-itens');
+            const carrinhoHover = document.getElementById('carrinho-conteudo-hover');
+            if (carrinho.length === 0) {
+                carrinhoItens.innerHTML = '<p>O carrinho está vazio.</p>';
+                carrinhoHover.innerHTML = '<p>O carrinho está vazio.</p>';
+            } else {
+                const itensHtml = carrinho.map(item => `<p>${item.produto} - <span>R$ ${item.preco.toFixed(2)}</span></p>`).join('');
+                carrinhoItens.innerHTML = itensHtml;
+                carrinhoHover.innerHTML = itensHtml;
+            }
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

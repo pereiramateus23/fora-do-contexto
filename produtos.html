@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos - PereiraMultimarcas</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="apple-touch-icon.png" alt="Logo PereiraMultimarcas">
+        </div>
+        <h1>Nossos Produtos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="vendas.html">Melhores Vendas</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos" class="destaque">
+            
+            <div class="produto">
+                <img src="imagem/CarteiraFlu.png" alt="Carteira do Fluminense">
+                <h3>Carteira do Fluminense</h3>
+                <p class="preco">R$ 29,99</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/diferentes-acessorios-dourados.jpg" alt="Conjunto de Acessórios">
+                <h3>Conjunto de Acessórios</h3>
+                <p class="preco">R$ 40,00</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/DecoraçãoFlu.png" alt="DecoraçãoFlu">
+                <h3>Decoração do Fluminense</h3>
+                <p class="preco">R$ 49,99</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagem/ChnieloFlu.png" alt="ChnieloFlu">
+                <h3>Chinelo do Fluminense</h3>
+                <p class="preco">R$ 29,99</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+
+           
+            <div class="produto">
+                <img src="imagem/BandeiraoFlu.png" alt="BandeiraoFlu">
+                <h3> Bandeira do Fluminense</h3>
+                <p class="preco">R$ 29,99</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/vestidofloral.jpeg" alt="Vestido Floral">
+                <h2>Vestido Floral</h2>
+                <p>Lindo vestido perfeito para eventos.</p>
+                <p class="preco">R$ 80,00</p>
+                <button class="comprar" onclick="adicionarAocarrinho('Vestido Floral, 80.00')">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/CapaceteFlu.png" alt="CapaceteFlu">
+                <h2>Capacete do Fluminense</h2>
+                <p>Capacete ideal para Tricolores.</p>
+                <p class="preco">R$ 80,00</p>
+                <button class="comprar" onclick="adicionarAocarrinho('Capacete do Fluminense, 80.00')">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/Camisatropical.jpg" alt="Camiseta Tropical">
+                <h3>Camiseta Tropical Nova</h3>
+                <p class="preco">R$ 39,99</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/FluMetaVerso.png" alt="FluMetaVerso">
+                <h3>Camisa Fluminense Metaverso</h3>
+                <p class="preco">R$ 79,99</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="imagem/MeiaoFlu.png" alt="MeiaoFlu">
+                <h3>Meião Umbro</h3>
+                <p class="preco">R$ 39,99</p>
+                <button class="comprar">Adicionar ao carrinho</button>
+            </div>
+ 
+        </section>
+
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p>Preencha o formulário abaixo para entrar em contato:</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Horário de funcionamento: Segunda a Sexta, das 9h às 17h</p>
+        <p>&copy; 2023 PereiraMultimarcas</p>
+    </footer>
+</body>
+</html>
